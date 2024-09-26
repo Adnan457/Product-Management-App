@@ -8,7 +8,7 @@ import {
 } from "../controllers/authController.js";
 import { isAdmin, requireSignIn } from "../middlewares/authMiddleware.js";
 
-//router object
+//router objec
 const router = express.Router();
 
 //routing
