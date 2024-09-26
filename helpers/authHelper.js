@@ -1,5 +1,5 @@
 import bcrypt from "bcrypt";
-// bcrypy
+
 export const hashPassword = async (password) => {
   try {
     const saltRounds = 10;
