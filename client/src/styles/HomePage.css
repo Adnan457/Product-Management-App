@@ -1,0 +1,333 @@
+/* Main container to hold both filters and products */
+.row {
+  display: flex;
+  flex-wrap: wrap; /* Ensure items wrap properly */
+  flex-direction: row; /* For larger screens, display filters and products side-by-side */
+  justify-content: flex-start;
+  padding: 20px; /* Ensure there is padding around the content */
+}
+
+/* Filter Section Container (Left Column) */
+.filter-section {
+  flex: 0 0 20%; /* On large screens, filters take 20% of the width */
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Products Section Container (Right Column) */
+.products-section {
+  flex: 0 0 75%; /* Products take 75% of the width */
+  padding-left: 20px;
+}
+
+/* On mobile devices, the sections should take full width */
+@media (max-width: 768px) {
+  .filter-section,
+  .products-section {
+      flex: 0 0 100%; /* Full width for both sections on mobile */
+      margin-bottom: 20px; /* Add spacing between sections */
+  }
+}
+
+/* Filter section header with lines */
+.filter-section h4 {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #333;
+  text-align: left;
+  margin-bottom: 15px;
+  border-bottom: 2px solid #ff6f61;
+  padding-bottom: 8px;
+}
+
+/* Filter checkbox and radio styling */
+.filter-checkbox, .filter-radio {
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+  font-size: 1rem;
+  color: #555;
+}
+
+.filter-radio {
+  display: block; /* Stack radio buttons vertically */
+}
+
+/* Customize the checkbox and radio button color */
+.filter-checkbox input, .filter-radio input {
+  margin-right: 10px;
+  accent-color: #ff6f61;
+}
+
+/* Reset Filters button */
+.btn-reset-filters {
+  background-color: #ff6f61;
+  color: white;
+  border: none;
+  padding: 10px 25px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 20px;
+  width: 100%;
+}
+
+.btn-reset-filters:hover {
+  background-color: #ff3b2d;
+}
+
+/* Product Card Styles */
+.card {
+  background: linear-gradient(to bottom, #333, #555);
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.card-img-top {
+  border-bottom: 1px solid #444;
+}
+
+.card-body {
+  padding: 15px;
+}
+
+.card-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #fff;
+}
+
+.card-text {
+  font-size: 1rem;
+  color: #ddd;
+}
+
+.btn-primary, .btn-secondary {
+  background-color: #444;
+  border: none;
+  color: #fff;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.btn-primary:hover, .btn-secondary:hover {
+  background-color: #666;
+}
+
+.btn-secondary {
+  background-color: #555;
+}
+
+.btn-secondary:hover {
+  background-color: #777;
+}
+
+/* Ensure product cards wrap properly */
+.products-section .d-flex {
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+/* Load More button */
+.btn-load-more {
+  background-color: #f39c12;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.btn-load-more:hover {
+  background-color: #e67e22;
+}
+
+/* Responsive Product Cards */
+@media (max-width: 768px) {
+  .card {
+      border-radius: 8px;
+  }
+
+  .card-title {
+      font-size: 1rem;
+  }
+
+  .card-text {
+      font-size: 0.9rem;
+  }
+
+  .btn-primary, .btn-secondary {
+      font-size: 0.9rem;
+      padding: 8px 16px;
+  }
+}
+
+/* Banner Slider */
+.banner-slider {
+  width: 100%;
+  height: 250px;
+  margin-top: 20px;
+  overflow: hidden;
+  position: relative;
+}
+
+.banner-img-slider {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: opacity 1s ease;
+}
+
+/* Responsive Banner */
+@media (max-width: 768px) {
+  .banner-slider {
+      height: 180px;
+  }
+
+  .banner-img-slider {
+      object-fit: contain;
+  }
+}
+
+@media (min-width: 1200px) {
+  .banner-slider {
+      height: 300px;
+  }
+}
+
+/* Prevent horizontal overflow */
+body, html {
+  overflow-x: hidden;
+}
+
+.price-strike {
+  text-decoration: line-through; /* Adds strikethrough */
+  color: #999; /* Change color to a lighter shade for the original price */
+  margin-right: 5px; /* Optional: add some space between prices */
+}
+
+.price-discounted {
+  color: #ff6f61; /* Highlight the discounted price */
+  font-weight: bold; /* Make the discounted price stand out */
+}
+
+/* HomePage.css */
+
+/* HomePage.css */
+
+/* Existing styles remain unchanged */
+
+/* Set max height for image layout to fit within viewport */
+.image-layout {
+  display: flex;
+  justify-content: flex-start; /* Aligns images to the start */
+  margin: 20px; /* Adds margin from left and right sides */
+  max-height: 80vh; /* Set maximum height to 80% of the viewport height */
+  overflow: hidden; /* Prevents overflow */
+}
+
+.left-image {
+  display: flex; /* Enables flex on the left image */
+  align-items: center; /* Centers the image vertically */
+  justify-content: center; /* Centers the image horizontally */
+  width: 50%; /* Set width for left image */
+  padding-right: 0; /* Remove any right padding */
+}
+
+.right-images {
+  display: flex;
+  flex-direction: column; /* Aligns images vertically */
+  justify-content: stretch; /* Makes both right images full height */
+  width: 50%; /* Set width for right images */
+}
+
+.top-image,
+.bottom-image {
+  flex: 1; /* Allow top and bottom images to take equal space */
+}
+
+.hover-image {
+  width: 100%; /* Makes images responsive */
+  height: 100%; /* Ensures they take the full height of the container */
+  object-fit: cover; /* Ensures images cover the space without leaving gaps */
+}
+
+/* Set a consistent height for the right images */
+.top-image img,
+.bottom-image img {
+  width: 100%; /* Makes the right images responsive */
+  height: 100%; /* Makes the right images full height */
+}
+
+.left-image img {
+  width: 100%; /* Makes the left image responsive */
+  height: auto; /* Maintains aspect ratio */
+  max-height: 100%; /* Ensures the left image takes full height of its container */
+  object-fit: cover; /* Ensures the image covers the space without leaving gaps */
+}
+
+
+
+.hover-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.hover-image:hover {
+  transform: scale(1.1); /* Zoom in on hover */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .image-layout {
+    flex-direction: column;
+  }
+
+  .left-image {
+    padding-right: 0;
+    margin-bottom: 10px;
+  }
+}
+
+
+.wishlist-icon-container {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.wishlist-icon {
+  cursor: pointer;
+}
+
+.wishlist-icon-filled {
+  color: red;
+  font-size: 24px;
+}
+
+.wishlist-icon-outline {
+  color: gray;
+  font-size: 24px;
+}

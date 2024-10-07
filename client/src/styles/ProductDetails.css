@@ -1,0 +1,251 @@
+/* General page container */
+.container {
+    max-width: 100%;
+    padding: 0 20px;
+  }
+  
+  /* Product Details Section */
+  .product-details {
+    background-color: #f9f9f9; /* Light background for contrast */
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+  }
+  
+  /* Product Details Text */
+  .product-details h1,
+  .product-details h6 {
+    color: #333;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .product-details h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  
+  /* Style for Add to Cart Button */
+  .btn {
+    background-color: #ff6f61; /* Brighter, eye-catching color */
+    color: #fff;
+    font-weight: 600;
+    padding: 10px 20px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+    text-transform: uppercase;
+  }
+  
+  .btn:hover {
+    background-color: #ff3b2d;
+  }
+  
+  /* Product Image */
+  .img-fluid {
+    border-radius: 12px; /* Rounded corners for product images */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Slight shadow for depth */
+  }
+  
+  /* Similar Products Section */
+  .similar-products {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    margin-top: 30px;
+  }
+  
+  .similar-products h6 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+  }
+  
+  /* Product Card Styles */
+  .card {
+    border: none;
+    border-radius: 12px;
+    transition: transform 0.3s, box-shadow 0.3s; /* Smooth hover effect */
+    overflow: hidden;
+    background: #f9f9f9; /* Light background */
+  }
+  
+  .card:hover {
+    transform: translateY(-5px); /* Elevation effect */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15); /* Deeper shadow */
+  }
+  
+  /* Card Title */
+  .card-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #333;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  /* Card Text */
+  .card-text {
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 10px;
+  }
+  
+  /* Product Price */
+  .card-price {
+    font-size: 1rem;
+    color: #ff6f61;
+    font-weight: bold;
+  }
+  
+  /* Button inside card */
+  .card .btn {
+    width: 100%;
+    background-color: #333;
+    color: white;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+  }
+  
+  .card .btn:hover {
+    background-color: #ff6f61; /* Button hover color */
+    color: white;
+  }
+  
+  /* Styling for hr */
+  hr {
+    border: 0;
+    height: 2px;
+    background: linear-gradient(90deg, rgba(255,111,97,1) 0%, rgba(255,205,97,1) 100%);
+    margin-top: 20px;
+    margin-bottom: 30px;
+  }
+  
+  /* Responsive Adjustments */
+  @media (max-width: 768px) {
+    .product-details {
+      padding: 15px;
+    }
+  
+    .product-details h1 {
+      font-size: 1.8rem;
+    }
+  
+    .card-title {
+      font-size: 1.1rem;
+    }
+  
+    .similar-products h6 {
+      font-size: 1.3rem;
+    }
+  }
+
+  /* Container for product details */
+.product-details {
+    background-color: #f9f9f9; /* Light background */
+    padding: 30px 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center; /* Center the content horizontally */
+    align-items: center; /* Align items vertically */
+    flex-direction: row; /* Ensure image and text are side by side */
+    gap: 30px; /* Space between image and text */
+  }
+  
+  /* Styling for the product image */
+  .product-image {
+    max-width: 100%;
+    border-radius: 12px; /* Rounded corners for the image */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+    width: 300px; /* Control width */
+    height: auto;
+  }
+  
+  /* Styling for the product details text */
+  .product-text {
+    max-width: 500px; /* Limit the width of the text section */
+  }
+  
+  .product-text h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+    font-family: 'Poppins', sans-serif;
+    color: #333; /* Darker color for text */
+  }
+  
+  .product-text h6 {
+    font-size: 1.1rem;
+    font-weight: 500;
+    margin-bottom: 10px;
+    color: #555;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .product-text h6 span {
+    font-weight: 600;
+    color: #ff6f61; /* Highlight the text (like price, category) */
+  }
+  
+  /* Style for Add to Cart Button */
+  .add-to-cart-btn {
+    background-color: #ff6f61; /* Bright color for the button */
+    color: #fff;
+    font-weight: 600;
+    padding: 12px 24px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+    text-align: center;
+    width: 100%;
+  }
+  
+  .add-to-cart-btn:hover {
+    background-color: #ff3b2d;
+  }
+  
+  /* Center align the Add to Cart button */
+  .product-text .add-to-cart-btn {
+    display: block;
+    margin: 20px auto;
+  }
+  
+  /* Styling for the hr */
+  hr {
+    border: 0;
+    height: 2px;
+    background: linear-gradient(90deg, rgba(255,111,97,1) 0%, rgba(255,205,97,1) 100%);
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  
+  /* Responsive Adjustments */
+  @media (max-width: 768px) {
+    .product-details {
+      flex-direction: column; /* Stack image and text on top of each other */
+      align-items: center; /* Center align both image and text */
+      gap: 20px;
+    }
+  
+    .product-text {
+      max-width: 100%;
+      text-align: center; /* Center the text on mobile */
+    }
+  
+    .product-text h1 {
+      font-size: 1.8rem;
+    }
+  
+    .product-text h6 {
+      font-size: 1rem;
+    }
+  
+    .add-to-cart-btn {
+      width: auto; /* Make button fit content on smaller screens */
+    }
+  }
+  
+  

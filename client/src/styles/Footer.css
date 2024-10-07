@@ -1,0 +1,121 @@
+/* Footer styling */
+.footer {
+  background-color: #282828;
+  color: #ffffff;
+  padding: 40px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-content {
+  display: flex;
+  flex-wrap: wrap; /* Added wrap to make the footer responsive */
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1200px;
+  margin-bottom: 30px;
+}
+
+.footer-section {
+  flex: 1;
+  padding: 0 20px;
+  min-width: 250px; /* Ensures the sections stack properly on smaller screens */
+  margin-bottom: 20px; /* Added margin for responsiveness */
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.about p {
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.links h3, .social h3, .payment h3 {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.links ul li {
+  margin-bottom: 10px;
+}
+
+.links ul li a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.links ul li a:hover {
+  color: #f1c40f;
+}
+
+.social-icons {
+  display: flex;
+  gap: 15px;
+}
+
+.social-icons a {
+  color: #ffffff;
+  font-size: 24px;
+  transition: color 0.3s;
+}
+
+.social-icons a:hover {
+  color: #f1c40f;
+}
+
+/* Payment Icons */
+.payment-icons {
+  display: flex;
+  gap: 15px;
+  font-size: 36px; /* Increase size of payment icons */
+  color: #ffffff;
+}
+
+.payment-icons svg:hover {
+  color: #f1c40f;
+}
+
+/* Footer Bottom */
+.footer-bottom {
+  width: 100%;
+  padding: 20px 0;
+  background-color: #1a1a1a;
+  font-size: 14px;
+  color: #888;
+}
+
+.footer-bottom p {
+  margin: 0;
+}
+
+.footer-bottom a {
+  color: #f1c40f;
+  text-decoration: none;
+}
+
+.footer-bottom a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+  .footer-content {
+    flex-direction: column; /* Stack sections vertically on smaller screens */
+    align-items: center;
+  }
+
+  .footer-section {
+    text-align: center;
+    padding: 20px 0;
+  }
+}

@@ -1,0 +1,125 @@
+/* Navbar styles */
+.navbar {
+  background-color: #212529; /* Dark theme */
+  padding: 1rem;
+  font-family: 'Poppins', sans-serif;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  position: relative; /* Navbar will scroll with the page */
+}
+
+.navbar-brand {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #ff914d; /* Bright accent color */
+}
+
+.navbar-nav .nav-link {
+  color: #ffffff !important;
+  font-size: 1.1rem;
+  font-weight: 500;
+  margin-left: 15px;
+  padding: 8px 16px;
+  transition: all 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #ff914d;
+  border-bottom: 2px solid #ff914d;
+}
+
+/* Dropdown styles */
+.dropdown-menu {
+  background-color: #212529; /* Dark background */
+  border: none;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.dropdown-item {
+  color: #ffffff;
+  padding: 10px 20px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.dropdown-item:hover {
+  background-color: #ff914d;
+  color: #ffffff;
+}
+
+/* Search Input */
+.form-control {
+  background-color: transparent;
+  color: #ffffff;
+  border: 2px solid #ffffff;
+  border-radius: 50px;
+  padding: 0.5rem 1.5rem;
+}
+
+.form-control::placeholder {
+  color: #ffffff;
+}
+
+.form-control:focus {
+  background-color: #ffffff;
+  color: #000000;
+  border-color: #ff914d;
+}
+
+/* Cart Button */
+.cart-link {
+  background-color: #ff914d;
+  color: #ffffff !important;
+  border-radius: 50px;
+  padding: 8px 16px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+/* Header.css */
+
+/* Existing styles remain unchanged */
+
+/* Cart Icon styles */
+.cart-icon {
+  width: 30px; /* Set the desired width */
+  height: auto; /* Maintain aspect ratio */
+  vertical-align: middle; /* Aligns the icon vertically in line with text */
+}
+
+
+.cart-link:hover {
+  background-color: #ff6a33;
+}
+
+/* Scrolling text styles */
+.scrolling-text-container {
+  background-color: black;
+  padding: 10px 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999; /* Ensures the text appears above everything */
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.scrolling-text {
+  color: white;
+  font-size: 1.2rem;
+  font-weight: 600;
+  display: inline-block;
+  animation: scroll-text 20s linear infinite;
+}
+
+@keyframes scroll-text {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+/* Ensures content does not overlap with scrolling text */
+body {
+  padding-top: 60px; /* Adjust this value based on scrolling text height */
+}

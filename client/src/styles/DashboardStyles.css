@@ -1,0 +1,31 @@
+/* Styling for the dashboard page */
+.dashboard-page {
+    background-color: #f8f9fa; /* Light gray background */
+    min-height: 100vh;
+    padding: 30px;
+  }
+  
+  .dashboard-card {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+  }
+  
+  .dashboard-item {
+    color: #333; /* Dark text color for visibility */
+    font-size: 18px;
+    margin-bottom: 15px;
+  }
+  
+  /* Hover effect for card */
+  .dashboard-card:hover {
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .dashboard-card {
+      width: 100%; /* Ensure full width on smaller screens */
+    }
+  }
+  

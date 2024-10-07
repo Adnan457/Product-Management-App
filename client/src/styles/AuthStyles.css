@@ -1,0 +1,154 @@
+/* General body styling */
+body, html {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden; /* Prevent horizontal scrolling, allow vertical scrolling */
+}
+
+/* Video Background */
+.video-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    z-index: -1; /* Keep the video behind other elements */
+}
+
+.video-background video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1;
+    transform: translate(-50%, -50%);
+    object-fit: cover;
+    opacity: 0.7;
+}
+
+/* Form container */
+.form-container {
+    position: relative;
+    z-index: 1; /* Ensure the form stays above the video */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 20px;
+    overflow: auto; /* Allow form to scroll if content exceeds screen height */
+}
+
+/* Form styling */
+.form-container form {
+    width: 100%;
+    max-width: 400px;
+    padding: 40px;
+    background-color: rgba(255, 255, 255, 0.85);
+    border-radius: 15px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    z-index: 2;
+}
+
+/* Other styling remains the same */
+
+
+/* Title styling */
+.form-container form .title {
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #333;
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+}
+
+/* Input fields styling */
+.form-container form input {
+    width: 100%;
+    padding: 14px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    font-size: 16px;
+    color: #333;
+    transition: all 0.3s ease;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+}
+
+.form-container form input:focus {
+    border-color: #ff6b6b;
+    background-color: #fff;
+    box-shadow: 0px 4px 12px rgba(255, 107, 107, 0.3);
+    outline: none;
+}
+
+/* Button styling */
+.form-container form button {
+    width: 100%;
+    padding: 14px;
+    background-color: #ff6b6b;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    letter-spacing: 0.5px;
+}
+
+.form-container form button:hover {
+    background-color: #e05656;
+    transform: translateY(-3px);
+}
+
+/* Styling for Forgot Password button */
+button.forgot-password {
+    background-color: transparent;
+    color: #007bff;
+    font-size: 14px;
+    cursor: pointer;
+    margin-top: 10px;
+    border: none;
+    transition: color 0.3s ease;
+  }
+  
+  button.forgot-password:hover {
+    color: #0056b3;
+    text-decoration: underline;
+  }
+  
+
+/* Responsive form adjustments */
+@media (max-width: 768px) {
+    .form-container form {
+        padding: 30px;
+    }
+
+    .form-container form .title {
+        font-size: 26px;
+    }
+}
+
+@media (max-width: 400px) {
+    .form-container {
+        padding: 15px;
+    }
+
+    .form-container form {
+        padding: 20px;
+    }
+
+    .form-container form .title {
+        font-size: 22px;
+    }
+}

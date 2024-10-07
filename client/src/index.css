@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:wght@300;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Navbar styles */
+.navbar {
+  font-family: 'Poppins', sans-serif;
+  font-size: 17px;
+  line-height: 26px;
+  text-transform: uppercase;
+  box-shadow: 0 8px 6px -6px gray;
+  --webkit-box-shadow: 0 8px 6px -6px gray;
+  border-bottom: 0.3px solid gray !important;
+}
+
+.nav-link {
+  font-weight: 300 !important;
+}
+
+.active {
+  border-bottom: 2px solid black;
+}
+
+/* Logo styling */
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  font-size: 1.5rem; /* Decrease font size for logo text */
+  letter-spacing: 2px; /* Modern letter spacing */
+  color: #ffffff; /* White logo text */
+  text-transform: uppercase;
+  transition: color 0.3s ease;
+}
+
+.logo-icon-svg {
+  width: 80px; /* Increased size for logo image */
+  height: auto; /* Ensure proper scaling */
+  margin-right: 10px; /* Spacing between the image and text */
+}
+
+.logo-text {
+  font-size: 1.5rem; /* Reduced text size for better proportion */
+  letter-spacing: 1.5px; /* Adjusted letter spacing */
+  color: #ffffff;
+}
+
+.navbar-brand:hover .logo-text {
+  color: #d84800; /* Change text color on hover */
+}
+
+.navbar-brand:hover .logo-icon-svg {
+  transform: scale(1.05); /* Slight hover scaling effect */
+}
+
+/* Navbar items alignment */
+.navbar-nav {
+  display: flex;
+  align-items: center; /* Vertically align navbar items */
+}
+
+.nav-item {
+  margin-left: 15px; /* Space between navbar items */
+  font-size: 1rem; /* Font size consistency for navbar items */
+}
+
+.navbar-toggler {
+  margin-left: auto; /* Ensure the toggler stays on the right */
+}
+
+
+
+
+.footer {
+  color: white;
+  padding: 25px;
+  background: #000000;
+  background: -webkit-linear-gradient(
+    to right,
+    #434343,
+    #000000
+  );
+  background: linear-gradient(to right, #434343, #000000);
+}
+
+.footer a {
+  text-decoration: none;
+  color: white;
+  padding: 10px;
+}
+
+.footer a:hover {
+  color: #ffefba;
+  border-bottom: 1px solid #ffefba;
+}
+
+/* Page not found CSS */
+
+.pnf {
+  display: flex;
+  min-height: 65vh;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.pnf-title {
+  font-size: 100px;
+  font-weight: 700;
+}
+
+.pnf-heading {
+  font-weight: normal;
+}
+
+.pnf-button {
+  color: black;
+  border: 1px solid black;
+  text-decoration: none;
+  padding: 10px;
+  margin-top: 10px;
+}
+
+/* ========================================= */
+/* =========contact us ========= */
+.contactus {
+  margin: 0;
+  padding: 0;
+  height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ==================== */
+.product-link {
+  text-decoration: none !important;
+  color: black !important;
+}
+
+.cat-btn {
+  padding: 40px 0px;
+  font-size: 24px;
+  text-transform: uppercase;
+}
+
+.cat-btn:hover {
+  background-color: #434343;
+  color: white;
+}
+
+/* Product Card Styling */
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%; /* Ensures equal card heights */
+}
+
+.card-img-top {
+  height: 200px; /* Ensures a fixed height for product images */
+  object-fit: cover; /* Ensures the image doesn't stretch or skew */
+}
+
+.card-body {
+  flex-grow: 1; /* Makes the body take up available space */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Ensures space between description and buttons */
+}
+
+.card-title {
+  font-size: 1.1rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.card-text {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.btn {
+  margin: 5px 0;
+  width: 100%; /* Ensure buttons stretch to full width */
+}
+
